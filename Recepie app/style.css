@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #ADA996;  
+    background: -webkit-linear-gradient(to right,
+    #EAEAEA, #DBDBDB,
+    #F2F2F2, #ADA996); 
+    background: linear-gradient(to right,
+    #EAEAEA, #DBDBDB,
+    #F2F2F2, #ADA996);
+    font-family: 'Baloo Chettan 2', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+.mobile-container{
+    background-color: snow;
+    width: 400px;
+    box-shadow: 0 0 5px 10px #3333331a ;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    
+
+}
+header input{
+    border: none;
+    background-color:#eee ;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    margin-left: 94px;
+}
+header button{
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    margin-left:10px ;
+    align-items: center;
+}
+.fav-container{
+    background-color: #e7dadc;
+    text-align: center;
+    padding: 1rem;
+}
+.fav-meals{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.fav-meals li{
+    width: 85px;
+}
+.fav-meals li img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+

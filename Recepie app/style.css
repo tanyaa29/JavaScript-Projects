@@ -42,6 +42,7 @@ header input{
     background-color:#eee ;
     border-radius: 3px;
     padding: 0.5rem 1rem;
+    font-family: inherit;
     margin-left: 94px;
 }
 header button{
@@ -55,21 +56,70 @@ header button{
 .fav-container{
     background-color: #e7dadc;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 }
 .fav-meals{
     display: flex;
     list-style-type: none;
     padding: 0;
+    overflow: auto;
 }
 .fav-meals li{
     width: 85px;
 }
 .fav-meals li img{
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 10px 5px #3333331a ;
     object-fit: cover;
     border: 2px solid white;
 }
+.fav-meals li span{
+    font-size: 0.9rem;
+}
+.meal{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 5px #3333331a ;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+.meal-header{
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    object-fit: cover;
+    height: 300px ;
+    width:100% ;
+}
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: gray;
+}
+.meal-body .fav-btn.active{
+    color: rgb(212, 55, 55);
+}
+
+
+
+
 
